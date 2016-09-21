@@ -8,4 +8,19 @@ function duplicate(arr) {
   }
   return newArr;
 }
-// time: O(n) n being input
+// time: O(n) n being lenth of input
+
+
+// Write a function that takes in an array and returns a shuffled version of it.
+function shuffle(array) {
+  let counter = array.length;
+  while (counter > 0) {
+    let index = Math.floor(Math.random() * counter);
+    counter--;
+    let temp = array[counter];
+    array[counter] = array[index];
+    array[index] = temp;
+  }
+  return array;
+}
+// time: O(n) n being length of input
