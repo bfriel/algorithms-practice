@@ -24,3 +24,23 @@ function shuffle(array) {
   return array;
 }
 // time: O(n) n being length of input
+
+
+// Write a staircase function that outputs the following:
+//    *
+//   **
+//  ***
+// ****
+//*****
+function staircase(n) {
+  for (let line = 1; line <= n; line++) {
+    let output = "";
+    for (let spaces = line; spaces < n; spaces++) {
+      output += " ";
+    }
+    for (let stars = n - line; stars < n; stars++) {
+      output += "*";
+    }
+    console.log(output);
+  }
+}
