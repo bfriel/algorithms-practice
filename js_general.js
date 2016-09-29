@@ -1,5 +1,6 @@
-// make this happen: duplicate([1, 2, 3, 4, 5]) ==> [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
+// Make this happen: duplicate([1, 2, 3, 4, 5]) ==> [1, 2, 3, 4, 5, 1, 2, 3, 4, 5]
 // NB: arr + arr returns a string
+
 function duplicate(arr) {
   let newArr = Array(arr.length * 2);
   for (let i = 0; i < arr.length; i ++) {
@@ -9,9 +10,10 @@ function duplicate(arr) {
   return newArr;
 }
 // time: O(n) n being lenth of input
-
+// ============================================================================
 
 // Write a function that takes in an array and returns a shuffled version of it.
+
 function shuffle(array) {
   let counter = array.length;
   while (counter > 0) {
@@ -24,6 +26,7 @@ function shuffle(array) {
   return array;
 }
 // time: O(n) n being length of input
+// ============================================================================
 
 
 // Write a staircase function that outputs the following:
@@ -32,6 +35,7 @@ function shuffle(array) {
 //  ***
 // ****
 //*****
+
 function staircase(n) {
   for (let line = 1; line <= n; line++) {
     let output = "";
@@ -44,3 +48,5 @@ function staircase(n) {
     console.log(output);
   }
 }
+
+// ============================================================================
